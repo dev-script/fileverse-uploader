@@ -28,40 +28,39 @@ Provide step-by-step instructions on how to install your project. You can includ
 - Build the Docker Image: docker build -t fileverse-uploader .
 - Run the Docker Container with the .env File: docker run --env-file .env fileverse-uploader
 ```
-
 ## Folder Structure
 
-fileverse-uploader
-├─ .gitignore
-├─ Dockerfile
-├─ README.md
-├─ config
-│  ├─ constants.js
-│  ├─ index.js
-│  ├─ log-config.json
-│  └─ message.js
-├─ db
-│  ├─ connection.js
-│  ├─ controllers
-│  │  ├─ common.js
-│  │  └─ index.js
-│  ├─ index.js
-│  └─ models
-│     └─ index.js
-├─ package.json
-├─ server.js
-├─ src
-│  └─ file
-│     ├─ file.controller.js
-│     ├─ file.route.js
-│     └─ file.validation.js
-├─ test
-│  ├─ get-ipfs-file.js
-│  └─ ipfs-file-upload.js
-└─ utilities
-   ├─ common-utils.js
-   ├─ ipfs.js
-   ├─ log-service.js
-   └─ server-utils.js
+- __fileverse\-uploader__
+   - [Dockerfile](Dockerfile)
+   - [README.md](README.md)
+   - __config__
+     - [constants.js](config/constants.js)
+     - [index.js](config/index.js)
+     - [log\-config.json](config/log-config.json)
+     - [message.js](config/message.js)
+   - __db__
+     - [connection.js](db/connection.js)
+     - __controllers__
+       - [common.js](db/controllers/common.js)
+       - [index.js](db/controllers/index.js)
+     - [index.js](db/index.js)
+     - __models__
+       - [files.js](db/models/files.js)
+       - [index.js](db/models/index.js)
+   - [package.json](package.json)
+   - [server.js](server.js)
+   - __src__
+     - __file__
+       - [file.controller.js](src/file/file.controller.js)
+       - [file.route.js](src/file/file.route.js)
+       - [file.validation.js](src/file/file.validation.js)
+   - __test__
+     - [db\-get\-all\-files.js](test/db-get-all-files.js)
+     - [get\-ipfs\-file.js](test/get-ipfs-file.js)
+     - [ipfs\-file\-upload.js](test/ipfs-file-upload.js)
+   - __utilities__
+     - [common\-utils.js](utilities/common-utils.js)
+     - [ipfs.js](utilities/ipfs.js)
+     - [log\-service.js](utilities/log-service.js)
+     - [server\-utils.js](utilities/server-utils.js)
 
-```
