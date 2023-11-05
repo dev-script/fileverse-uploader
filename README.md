@@ -27,3 +27,41 @@ Provide step-by-step instructions on how to install your project. You can includ
 ## Docker
 - Build the Docker Image: docker build -t fileverse-uploader .
 - Run the Docker Container with the .env File: docker run --env-file .env fileverse-uploader
+```
+
+## Folder Structure
+
+fileverse-uploader
+├─ .gitignore
+├─ Dockerfile
+├─ README.md
+├─ config
+│  ├─ constants.js
+│  ├─ index.js
+│  ├─ log-config.json
+│  └─ message.js
+├─ db
+│  ├─ connection.js
+│  ├─ controllers
+│  │  ├─ common.js
+│  │  └─ index.js
+│  ├─ index.js
+│  └─ models
+│     └─ index.js
+├─ package.json
+├─ server.js
+├─ src
+│  └─ file
+│     ├─ file.controller.js
+│     ├─ file.route.js
+│     └─ file.validation.js
+├─ test
+│  ├─ get-ipfs-file.js
+│  └─ ipfs-file-upload.js
+└─ utilities
+   ├─ common-utils.js
+   ├─ ipfs.js
+   ├─ log-service.js
+   └─ server-utils.js
+
+```
