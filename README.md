@@ -16,6 +16,7 @@ Provide step-by-step instructions on how to install your project. You can includ
 - Install the dependencies with `npm install`
 - Create a `.env` file in root & copy the keys from [.env.sample](.env.sample) file
 - Start the server in development `npm start`
+- Run test cases `npm run start`
 
 ## Production using pm2
 - create file .pm2.json in root directory
