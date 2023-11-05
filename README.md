@@ -31,7 +31,7 @@ Provide step-by-step instructions on how to install your project. You can includ
 ```
 ## Folder Structure
 
-- __fileverse\-uploader__
+- __fileverse\-assignment__
    - [Dockerfile](Dockerfile)
    - [README.md](README.md)
    - __config__
@@ -56,9 +56,7 @@ Provide step-by-step instructions on how to install your project. You can includ
        - [file.route.js](src/file/file.route.js)
        - [file.validation.js](src/file/file.validation.js)
    - __test__
-     - [db\-get\-all\-files.js](test/db-get-all-files.js)
-     - [get\-ipfs\-file.js](test/get-ipfs-file.js)
-     - [ipfs\-file\-upload.js](test/ipfs-file-upload.js)
+     - [file.js](test/file.js)
    - __utilities__
      - [common\-utils.js](utilities/common-utils.js)
      - [ipfs.js](utilities/ipfs.js)
